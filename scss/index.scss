@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Starry;
+	src: url('../fonts/One Starry Night Font.ttf')
+}
+
+$color--pink: #f5ddd5;
+$color--peach: #f2baac;
+$color--green1: #50ab87;
+$color--green2: #82c7a9;
+$color--mint: #aed9b3;
+$color--yellow: #ededc2;
+
+$color--blue: #d6ecff;
+$color--morePink: #ffd8d8;
+
+iframe {
+	margin-top: 20%;
+	border: 20px solid black;
+	border-radius: 12px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+
+	background: $color--pink;
+	  // background: -moz-linear-gradient(top, $color--pink 0%, $color--mint 100%);
+	  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color--pink), color-stop(100%, $color--mint));
+	  // background: -webkit-linear-gradient(top, $color--pink 0%, $color--mint 100%);
+	  // background: -o-linear-gradient(top, $color--pink 0%, $color--mint 100%);
+	  // background: -ms-linear-gradient(top, $color--pink 0%, $color--mint 100%);
+	  // background: linear-gradient(to bottom, $color--pink 0%, $color--mint 100%);
+	  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color--pink', endColorstr='$color--mint',GradientType=0 );
+	background: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%);
+}
+
+h1, h2, h3 {	
+	font-family: Starry;
+}
+
+h1 {
+	font-size: 100px;
+	margin-top: 60px;
+}
+
+h2 {
+	font-family: Starry;
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 42px;
+}
+
+.nav-logo {
+	font-size: 18px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+	//margin-bottom: 0;
+
+	span {
+		font-size: 16px;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+section {
+	padding: 40px 0;
+}
+
+section:first-of-type {
+	height: 100vh;
+}
+
+#video {
+	padding: 20px 0;
+}
+
+.playMe {
+	font-family: Starry;
+	font-weight: bold;
+	font-size: 72px;
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+
+	position: absolute;
+	top: 220px;
+  	left: calc(50% - 80px);
+}
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+#ceremony {
+	padding: 0;
+}
+
+#ceremony-left {
+	padding: 20px 0;
+}
+
+// section:nth-child(odd)
+// {
+// 	background-color: $color--pink;
+// }
+
+.video-js {
+	margin: 0 auto;
+}
+
+.photo {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+a {
+	color: $color--green1;
+}
+
+#map {
+	height: 500px;
+}
+
+.registry {
+	text-align: center;
+	img
+	{
+		width: 200px;
+	}
+}

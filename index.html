@@ -27,6 +27,8 @@
       href="images/heart.png">
 </head>
 <body>
+	<div class="bg dark" data-0="opacity: 1;" data-1000="opacity: 0;"></div>
+	<div class="bg sunset" data-0="opacity: 0;" data-1000="opacity: 1;"></div>
 	<!-- <header>
 	<nav class="navbar navbar-default" role="navigation">
 		        <div class="container">
@@ -71,7 +73,8 @@
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen></iframe>
 			<!-- <div class="playMe blink">Play me!</div> -->
 
-			<h1>Nicole and Joel are getting married!</h1>
+			<!-- <h1>Nicole and Joel are getting married!</h1> -->
+			<button></button>
 		</div>
 	</section>
 	<section id="about">
@@ -149,7 +152,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script> -->
     <script type="text/javascript" src="js/map.js"></script>
     <script src="js/jquery.nav.js"></script>
     <script src="js/jquery.arctext.js"></script>
@@ -164,6 +167,13 @@
 
 	 	$('h1').arctext({radius: 1000, dir: -1});
 	 	$('h2').arctext({radius: 170});
+
+	 	var s = skrollr.init();
+
+	 	// $('button').click(function() {
+	 	// 	$('.dark').fadeOut(4000);
+	 	// 	$('.sunset').fadeIn(4000);
+	 	// });
 	</script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+@import 'sunset';
+
 * {
 	box-sizing: border-box;
 }
@@ -17,12 +19,6 @@ $color--yellow: #ededc2;
 $color--blue: #d6ecff;
 $color--morePink: #ffd8d8;
 
-iframe {
-	margin-top: 20%;
-	border: 20px solid black;
-	border-radius: 12px;
-}
-
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 200;
@@ -36,7 +32,7 @@ body {
 	  // background: -ms-linear-gradient(top, $color--pink 0%, $color--mint 100%);
 	  // background: linear-gradient(to bottom, $color--pink 0%, $color--mint 100%);
 	  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color--pink', endColorstr='$color--mint',GradientType=0 );
-	background: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%);
+	//background: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%);
 }
 
 h1, h2, h3 {	
@@ -57,22 +53,6 @@ h3 {
 	font-size: 42px;
 }
 
-.nav-logo {
-	font-size: 18px;
-	vertical-align: middle;
-	text-transform: uppercase;
-	text-align: center;
-	//margin-bottom: 0;
-
-	span {
-		font-size: 16px;
-	}
-}
-
-.navbar {
-	margin-bottom: 0;
-}
-
 section {
 	padding: 40px 0;
 }
@@ -81,21 +61,27 @@ section:first-of-type {
 	height: 100vh;
 }
 
+// section:nth-child(odd)
+// {
+// 	background-color: $color--pink;
+// }
+
+a {
+	color: $color--green1;
+}
+
+/*** VIDEO ***/
+
+iframe {
+	margin-top: 20%;
+	border: 20px solid black;
+	border-radius: 12px;
+}
+
 #video {
 	padding: 20px 0;
 }
 
-.playMe {
-	font-family: Starry;
-	font-weight: bold;
-	font-size: 72px;
-	color: white;
-	text-shadow: 2px 2px 2px #000;
-
-	position: absolute;
-	top: 220px;
-  	left: calc(50% - 80px);
-}
 
 .blink {
   animation: blink 1s steps(5, start) infinite;
@@ -112,6 +98,50 @@ section:first-of-type {
   }
 }
 
+.video-js {
+	margin: 0 auto;
+}
+
+.playMe {
+	font-family: Starry;
+	font-weight: bold;
+	font-size: 72px;
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+
+	position: absolute;
+	top: 220px;
+  	left: calc(50% - 80px);
+}
+
+/*** NAV ***/
+
+.nav-logo {
+	font-size: 18px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+	//margin-bottom: 0;
+
+	span {
+		font-size: 16px;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+/*** ABOUT ***/
+
+.photo {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+/*** CEREMONY ***/
+
 
 #ceremony {
 	padding: 0;
@@ -121,28 +151,11 @@ section:first-of-type {
 	padding: 20px 0;
 }
 
-// section:nth-child(odd)
-// {
-// 	background-color: $color--pink;
-// }
-
-.video-js {
-	margin: 0 auto;
-}
-
-.photo {
-	border-radius: 50%;
-	width: 300px;
-	height: 300px;
-}
-
-a {
-	color: $color--green1;
-}
-
 #map {
 	height: 500px;
 }
+
+/*** REGISTRY ***/
 
 .registry {
 	text-align: center;

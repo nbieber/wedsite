@@ -1,3 +1,15 @@
+$color--pink: #f5ddd5;
+$color--peach: #f2baac;
+$color--green1: #50ab87;
+$color--green2: #82c7a9;
+$color--mint: #aed9b3;
+$color--yellow: #ededc2;
+
+$color--dark: #333;
+
+$color--blue: #d6ecff;
+$color--morePink: #ffd8d8;
+
 @import 'sunset';
 
 * {
@@ -9,30 +21,12 @@
 	src: url('../fonts/One Starry Night Font.ttf')
 }
 
-$color--pink: #f5ddd5;
-$color--peach: #f2baac;
-$color--green1: #50ab87;
-$color--green2: #82c7a9;
-$color--mint: #aed9b3;
-$color--yellow: #ededc2;
-
-$color--blue: #d6ecff;
-$color--morePink: #ffd8d8;
-
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 200;
 	font-size: 20px;
 
-	background: $color--pink;
-	  // background: -moz-linear-gradient(top, $color--pink 0%, $color--mint 100%);
-	  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color--pink), color-stop(100%, $color--mint));
-	  // background: -webkit-linear-gradient(top, $color--pink 0%, $color--mint 100%);
-	  // background: -o-linear-gradient(top, $color--pink 0%, $color--mint 100%);
-	  // background: -ms-linear-gradient(top, $color--pink 0%, $color--mint 100%);
-	  // background: linear-gradient(to bottom, $color--pink 0%, $color--mint 100%);
-	  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color--pink', endColorstr='$color--mint',GradientType=0 );
-	//background: linear-gradient(to bottom, #40405c 0%,#6f71aa 80%,#8a76ab 100%);
+	color:  $color--pink;
 }
 
 h1, h2, h3 {	
@@ -53,18 +47,22 @@ h3 {
 	font-size: 42px;
 }
 
-section {
-	padding: 40px 0;
-}
+// section {
+// 	padding: 40px 0;
+// }
 
-section:first-of-type {
-	height: 100vh;
-}
+// section:first-of-type {
+// 	height: 100vh;
+// }
 
 // section:nth-child(odd)
 // {
 // 	background-color: $color--pink;
 // }
+
+section:not(:first-of-type) {
+	background: $color--dark;
+}
 
 a {
 	color: $color--green1;
@@ -74,8 +72,11 @@ a {
 
 iframe {
 	margin-top: 20%;
-	border: 20px solid black;
+	margin-bottom: 20%;
+	border: 20px solid $color--dark;
 	border-radius: 12px;
+
+	position: absolute;
 }
 
 #video {

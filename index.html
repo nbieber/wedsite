@@ -12,23 +12,23 @@
 	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 	<style type="text/css">
-	  .vjs-default-skin .vjs-play-progress,
-	  .vjs-default-skin .vjs-volume-level { background-color: #099dee }
-	  .vjs-default-skin .vjs-control-bar,
-	  .vjs-default-skin .vjs-big-play-button { background: rgba(255,255,255,0.7) }
-	  .vjs-default-skin .vjs-slider { background: rgba(255,255,255,0.2333333333333333) }
-	  .vjs-default-skin .vjs-control-bar { font-size: 62% }
+		.vjs-default-skin .vjs-play-progress,
+		.vjs-default-skin .vjs-volume-level { background-color: #099dee }
+		.vjs-default-skin .vjs-control-bar,
+		.vjs-default-skin .vjs-big-play-button { background: rgba(255,255,255,0.7) }
+		.vjs-default-skin .vjs-slider { background: rgba(255,255,255,0.2333333333333333) }
+		.vjs-default-skin .vjs-control-bar { font-size: 62% }
 	</style>
 
 	<link rel="stylesheet" href="css/index.css">
 
 	<link rel="icon" 
-      type="image/png" 
-      href="images/heart.png">
+	type="image/png" 
+	href="images/heart.png">
 </head>
 <body>
-	<div class="bg dark" data-0="opacity: 1;" data-1000="opacity: 0;"></div>
-	<div class="bg sunset" data-0="opacity: 0;" data-1000="opacity: 1;"></div>
+	<div class="bg purple" data-0="opacity: 1;" data-500="opacity: 0;"></div>
+	<div class="bg sunset" data-0="opacity: 0;" data-500="opacity: 1;"></div>
 	<!-- <header>
 	<nav class="navbar navbar-default" role="navigation">
 		        <div class="container">
@@ -60,9 +60,31 @@
 		          </div>
 		        </div>
 		    </nav>
-	</header> -->
+		</header> -->
+	<!-- <section id="slide-1" class="homeSlide">
+	    <div class="bcg"
+	        data-center="background-position: 50% 0px;"
+	        data-top-bottom="background-position: 50% -100px;"
+	        data-anchor-target="#slide-1"
+	    >
+	        <div class="hsContainer">
+	            <div class="hsContent"
+	                data-center="opacity: 1"
+	                data-106-top="opacity: 0"
+	                data-anchor-target="#slide-1 h2"
+	            >
+	                <h2>Fade out elements before <br>they leave viewport</h2>
+	            </div>
+	        </div>
+	    </div>
+	</section> -->
+
 	<section id="video">
 		<div class="container text-center">
+			<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen data-0="left:50%;top:40%;opacity:1;" data-150="opacity:1;" data-250="opacity:0;" style="left: 50%; top: 40%; opacity: 1;" class="skrollable"></iframe>
+
+			</div>
 			<!-- <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls
 			 preload="auto" width="960" height="396" poster="MY_VIDEO_POSTER.jpg"
 			 data-setup="{}">
@@ -70,26 +92,37 @@
 			 <source src="MY_VIDEO.webm" type='video/webm'>
 			 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 			</video> -->
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen></iframe>
+			
 			<!-- <div class="playMe blink">Play me!</div> -->
 
-			<!-- <h1>Nicole and Joel are getting married!</h1> -->
-			<button></button>
+			
+			<h1 id="heading" >Nicole and Joel are getting married!</h1>
+			<h2>May 22, 2016</h2>
+
+			<div class="row" style="margin-bottom: -20px;" class="skrollable">
+				<img src="images/silhouette.png">
+			</div>
 		</div>
 	</section>
 	<section id="about">
 		<div class="container text-center">
-			<p class="col-sm-6">Nicole and Joel met during their freshman chemistry class at MIT, and they soon found that there was chemistry between them!</p>
-			<!-- TODO: beaker/hearts animation -->
-			<p class="col-sm-6"></p>
-			<p class="col-sm-6">They dated for the rest of their time at MIT, and shortly after finishing school, Joel and Nicole climbed to the top of Masada in Israel, where Joel asked Nicole an important question...</p>
-			<p class="col-sm-6"></p>
-			<p>Nicole said yes, of course<sup>*</sup></p>
+			<div class="row">
+				<p class="col-sm-6">Nicole and Joel met during their freshman chemistry class at MIT, and they soon found that there was chemistry between them!</p>
+				<!-- TODO: beaker/hearts animation -->
+				<p class="col-sm-6"></p>
+			</div>
+			<div class="row">
+				<p class="col-sm-6"></p>
 
+				<p class="col-sm-6">They dated for the rest of their time at MIT, and shortly after finishing school, Joel and Nicole climbed to the top of Masada in Israel, where Joel asked Nicole an important question...</p>
+			</div>
+			<div class="row">
+				<p>Nicole said yes, of course<sup>*</sup></p>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sunt veniam magni voluptas? Quidem perspiciatis voluptatum sapiente libero. Quae excepturi earum quam ut corporis magni ea doloribus totam aliquid tempora!</p>
 		</div>
 	</section>
-	<section>
+	<!-- <section>
 		<div class="container text-center">
 			<div class="col-sm-6 wow fadeInLeft">
 				<h2>The Bride</h2>
@@ -101,17 +134,19 @@
 				<img src="images/joel.jpg" alt="Joel" class="photo">
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section id="ceremony"  class="container-fluid">
-		<div id="ceremony-left" class="col-sm-5 text-center">
-			<h1>Ceremony &amp; Reception</h1>
+		<div class="container">
+			<div id="ceremony-left" class="col-sm-5 text-center">
+				<h1>Ceremony &amp; Reception</h1>
 
-			<p>The Ceremony will begin at 12p.m. at the <a href="http://hallofsprings.com/">Hall of Springs</a></p>
+				<p>The Ceremony will begin at 12p.m. at the <a href="http://hallofsprings.com/">Hall of Springs</a></p>
 
-			<p>Reception immediately to follow.</p>
-		</div>
-		<div class="col-sm-7" id="map">
+				<p>Reception immediately to follow.</p>
+			</div>
+			<div class="col-sm-7" id="map">
+			</div>
 		</div>
 	</section>
 	<section id="hotels">
@@ -120,9 +155,9 @@
 			<div class="hotel col-sm-4">
 				<h3>The Gideon Putnam</h3>
 				<p>The Gideon Putnam is within walking distance of the Hall of Springs.
-				
 
-				<a href="http://www.gideonputnam.com/">http://www.gideonputnam.com/</a>
+
+					<a href="http://www.gideonputnam.com/">http://www.gideonputnam.com/</a>
 				</p>
 			</div>
 			<div class="hotel col-sm-4">
@@ -153,20 +188,24 @@
 	<script src="http://vjs.zencdn.net/4.12/video.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script> -->
-    <script type="text/javascript" src="js/map.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.arctext.js"></script>
-    <script src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
-    <script>
-	 	new WOW().init();
-	 	$('#nav').onePageNav();
+	<script type="text/javascript" src="js/map.js"></script>
+	<script src="js/jquery.nav.js"></script>
+	<script src="js/jquery.arctext.js"></script>
+	<script src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
 
-	 	$('#video').click(function() {
-	 		$('.playMe').fadeOut();
-	 	});
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script>
+	 	// new WOW().init();
+	 	// $('#nav').onePageNav();
 
-	 	$('h1').arctext({radius: 1000, dir: -1});
-	 	$('h2').arctext({radius: 170});
+	 	// $('#video').click(function() {
+	 	// 	$('.playMe').fadeOut();
+	 	// });
+
+	 	// $('h1').arctext({radius: 1000, dir: -1});
+	 	// $('h2').arctext({radius: 170});
 
 	 	var s = skrollr.init();
 
@@ -174,6 +213,11 @@
 	 	// 	$('.dark').fadeOut(4000);
 	 	// 	$('.sunset').fadeIn(4000);
 	 	// });
+
+$(function() {
+		    // Init Controller
+		    var scrollMagicController = new ScrollMagic();
+		});
 	</script>
 </body>
 </html>

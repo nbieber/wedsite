@@ -5,7 +5,7 @@ $color--green2: #82c7a9;
 $color--mint: #aed9b3;
 $color--yellow: #ededc2;
 
-$color--dark: #333;
+$color--dark: #1f1f1f;
 
 $color--blue: #d6ecff;
 $color--morePink: #ffd8d8;
@@ -47,20 +47,22 @@ h3 {
 	font-size: 42px;
 }
 
-// section {
-// 	padding: 40px 0;
-// }
-
-// section:first-of-type {
-// 	height: 100vh;
-// }
-
 // section:nth-child(odd)
 // {
 // 	background-color: $color--pink;
 // }
 
+section:first-of-type {
+	background-image: url('../images/grass.svg');
+	background-repeat: repeat-x;
+	background-size: 300px;
+	background-position: bottom;
+}
+
+
 section:not(:first-of-type) {
+
+	padding: 40px 0;
 	background: $color--dark;
 }
 

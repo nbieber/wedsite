@@ -44,7 +44,13 @@
   background: linear-gradient(to bottom, #171c33 0%, #525f83 42%, #848896 63%, #bb9d78 78%, #f6e183 100%); }
 
 #announcement {
-  position: absolute; }
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+  #announcement h1 {
+    font-size: 100px; }
+  #announcement h2 {
+    font-size: 60px; }
 
 #silhouette {
   position: fixed;
@@ -67,20 +73,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 20px;
-  color: #f5ddd5;
-  height: 100vh;
-  overflow: hidden; }
+  color: #fde6b1;
+  height: 100vh; }
 
 h1, h2, h3 {
   font-family: Starry; }
-
-h1 {
-  font-size: 100px;
-  margin-top: 60px; }
-
-h2 {
-  font-family: Starry;
-  font-size: 60px; }
 
 h3 {
   font-size: 42px; }

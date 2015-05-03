@@ -3,10 +3,10 @@
 
 <head>
 
-
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />
-
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600, 500,400,200,100,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 
 	<link rel="icon" 
@@ -39,27 +39,56 @@
 </head>
 <body class="sunset">
 
-<div class="bg grass"></div>
-<img id="silhouette" src="images/silhouette.svg" width="300px">
-
-
+<div class="grass"></div>
+<img id="silhouette" src="images/silhouette.svg">
+<!-- <img class="nav-logo" src="images/logo.png" alt=""> -->
+<!-- <div class="nav-logo">
+	Nicole &amp; Joel<br>
+	May 22, 2016
+</div> -->
 
 <ul id="menu">
-	<li data-menuanchor="video"><a href="#video">Welcome</a></li>
-	<li data-menuanchor="ceremony"><a href="#ceremony">Ceremony &amp; Reception</a></li>
-	<li data-menuanchor="hotels"><a href="#hotels">Hotel Information</a></li>
-	<li data-menuanchor="gifts"><a href="#gifts">Gifts</a></li>
-	<li data-menuanchor="rsvp"><a href="#rsvp">RSVP</a></li>
+	<li data-menuanchor="video">
+		<a href="#video">
+			<i class="fa fa-video-camera"></i>
+			Welcome
+		</a>
+	</li>
+	<li data-menuanchor="ceremony">
+		<a href="#ceremony">
+			<i class="fa fa-heart"></i>
+			Ceremony
+		</a>
+	</li>
+	<li data-menuanchor="hotels">
+		<a href="#hotels">
+			<i class="fa fa-bed"></i>
+			Hotels
+		</a>
+	</li>
+	<li data-menuanchor="gifts">
+		<a href="#gifts">
+			<i class="fa fa-gift"></i>
+			Gifts
+		</a>
+	</li>
+	<li data-menuanchor="rsvp">
+		<a href="#rsvp">
+			<i class="fa fa-pencil"></i>
+			RSVP
+		</a>
+	</li>
 </ul>
 
 
 <div id="fullpage">
-	<div class="section" id="section0">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen data-0="left:50%;top:40%;opacity:1;" data-150="opacity:1;" data-250="opacity:0;" style="left: 50%; top: 40%; opacity: 1;" class="skrollable"></iframe>
+	<div class="section" id="section0"><!-- 
+		<h1>Nicole and Joel are getting married!</h1> -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="section" id="section1">
 	    <h1>Ceremony</h1>
-	    <p>The Ceremony will begin at 12p.m. at the <a href="http://hallofsprings.com/">Hall of Springs</a></p>
+	    <p>The Ceremony will begin at 12p.m. on May 22, 2016 at the <a href="http://hallofsprings.com/" target="_blank">Hall of Springs</a></p>
 
 		<p>Reception immediately to follow.</p>
 	</div>
@@ -68,9 +97,19 @@
 	</div>
 	<div class="section" id="section3">
 		<h1>Gifts</h1>
+		<p>The best present is your presence!</p>
+		<div class="registry col-sm-6">
+			<a href="http://www.amazon.com/registry/wedding/26TPMHY5RC7X">
+				<img src="images/amazonlogo.png" alt="amazon.com" target="_blank">
+			</a>
+			<a href="#">
+				<img src="images/bedbathbeyondlogo.png" alt="bedbathandbeyond.com" target="_blank">
+			</a>
+		</div>
 	</div>
 	<div class="section" id="section4">
 		<h1>RSVP</h1>
+		<p>Please click <a href="http://nicoleandjoel.anrsvp.com/" target="_blank">here</a> to rsvp.<br>We look forward to celebrating with you!</p>
 	</div>
 </div>
 

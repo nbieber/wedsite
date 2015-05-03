@@ -1,15 +1,12 @@
-$color--pink: #f5ddd5;
-$color--peach: #f2baac;
-$color--green1: #50ab87;
-$color--green2: #82c7a9;
-$color--mint: #aed9b3;
-$color--yellow: #ededc2;
+$color--1: #6f749e;
+$color--2: #9a8daf;
+$color--3: #d0a8b9;
+$color--4: #f8bbb1;
+$color--5: #fde6b1;
 
 $color--dark: #1f1f1f;
 
-$color--blue: #d6ecff;
-$color--morePink: #ffd8d8;
-
+@import 'menu';
 @import 'sunset';
 
 * {
@@ -22,7 +19,7 @@ $color--morePink: #ffd8d8;
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 200;
 	font-size: 20px;
 
@@ -34,42 +31,43 @@ body {
 
 h1, h2, h3 {	
 	font-family: Starry;
+	color: $color--5;
+	text-shadow: 1px 0px 5px $color--5;
 }
-
-
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
 
 h3 {
 	font-size: 42px;
 }
 
-// section:nth-child(odd)
-// {
-// 	background-color: $color--pink;
-// }
-
-section:first-of-type {
-	height: 1200px;
+.section{
+	text-align:center;
 }
 
-section:not(:first-of-type) {
-
-	padding: 40px 0;
-	background: $color--dark;
-}
 
 a {
-	color: $color--green1;
+	color: $color--4;
+	font-weight: 500;
+
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+a:hover {
+	// color: $color--1;
+	text-shadow: 1px 0px 5px $color--4;
 }
 
 /*** VIDEO ***/
 
 iframe {
-	margin-top: 20%;
-	margin-bottom: 20%;
 	border: 20px solid $color--dark;
 	border-radius: 12px;
-
-	//position: absolute;
 }
 
 #video {
@@ -108,22 +106,18 @@ iframe {
   	left: calc(50% - 80px);
 }
 
-/*** NAV ***/
 
-.nav-logo {
-	font-size: 18px;
-	vertical-align: middle;
-	text-transform: uppercase;
-	text-align: center;
-	//margin-bottom: 0;
+.fp-tableCell {
+	vertical-align: top;
 
-	span {
-		font-size: 16px;
+	h1, iframe {
+		margin-top: 100px;
 	}
 }
 
-.navbar {
-	margin-bottom: 0;
+.fullpage-wrapper {
+	width: 960px;
+	margin: 0 auto;
 }
 
 /*** ABOUT ***/
@@ -137,17 +131,17 @@ iframe {
 /*** CEREMONY ***/
 
 
-#ceremony {
-	padding: 0;
-}
+// #ceremony {
+// 	padding: 0;
+// }
 
-#ceremony-left {
-	padding: 20px 0;
-}
+// #ceremony-left {
+// 	padding: 20px 0;
+// }
 
-#map {
-	height: 500px;
-}
+// #map {
+// 	height: 500px;
+// }
 
 /*** REGISTRY ***/
 
@@ -155,6 +149,6 @@ iframe {
 	text-align: center;
 	img
 	{
-		width: 200px;
+		width: 300px;
 	}
 }

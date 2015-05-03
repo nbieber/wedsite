@@ -6,6 +6,7 @@ $color--5: #fde6b1;
 
 $color--dark: #1f1f1f;
 
+@import 'grid';
 @import 'menu';
 @import 'sunset';
 
@@ -19,8 +20,8 @@ $color--dark: #1f1f1f;
 }
 
 body {
-	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 200;
+	font-family:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 100;
 	font-size: 20px;
 
 	color:  #fde6b1;
@@ -110,9 +111,18 @@ iframe {
 .fp-tableCell {
 	vertical-align: top;
 
-	h1, iframe {
+	h1 {
 		margin-top: 100px;
 	}
+
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+#section0 h1 {
+	margin: 50px 0;
 }
 
 .fullpage-wrapper {
@@ -151,4 +161,9 @@ iframe {
 	{
 		width: 300px;
 	}
+}
+
+/*** HOTELS ***/
+.hotel {
+	font-size: 14px;
 }

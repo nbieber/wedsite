@@ -302,7 +302,7 @@
   src: url("../fonts/One Starry Night Font.ttf"); }
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 20px;
   color: #fde6b1;
   height: 100vh; }
@@ -316,7 +316,8 @@ h1 {
   font-size: 6em; }
 
 p {
-  font-size: 1.5em; }
+  font-size: 2em;
+  -webkit-font-smoothing: antialiased; }
 
 h3 {
   font-size: 42px; }
@@ -387,6 +388,9 @@ p {
 
 /*** CEREMONY ***/
 /*** REGISTRY ***/
+#section3 p {
+  font-size: 1.5em; }
+
 .registry {
   text-align: center; }
   .registry img {

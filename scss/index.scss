@@ -19,9 +19,12 @@ $color--dark: black;
 	src: url('../fonts/One Starry Night Font.ttf')
 }
 
+html {
+}
+
 body {
 	font-family:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 20px;
 
 	color:  #fde6b1;
@@ -39,7 +42,9 @@ h1{
 	font-size: 6em;
 }
 p{
-	font-size: 1.5em;
+	font-size: 2em;
+
+	-webkit-font-smoothing: antialiased;
 }
 
 h3 {
@@ -154,6 +159,10 @@ p {
 // }
 
 /*** REGISTRY ***/
+
+#section3 p {
+	font-size: 1.5em;
+}
 
 .registry {
 	text-align: center;

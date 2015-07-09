@@ -10,6 +10,21 @@ $color--dark: black;
 @import 'menu';
 @import 'sunset';
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -39,7 +54,7 @@ h1, h2, h3 {
 	text-shadow: 1px 0px 5px $color--5;
 }
 h1{
-	font-size: 6em;
+	font-size: 5em;
 }
 h2 {
 	font-size: 3em;
@@ -165,8 +180,9 @@ p {
 
 /*** REGISTRY ***/
 
+#section2 p,
 #section3 p {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .registry {

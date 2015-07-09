@@ -221,42 +221,35 @@
     width: 90.6666666667%;
     display: inline-block;
     vertical-align: top; } }
-.nav-logo {
-  width: 150px;
-  position: fixed;
-  top: 10px;
-  left: 40px;
-  color: black;
-  font-weight: 600; }
-
 #menu i {
-  margin-right: 6px; }
-
+  display: none; }
 #menu li {
-  display: block; }
-
+  display: inline-block; }
 #menu li a {
   text-decoration: none; }
-
 #menu li a,
 #menu li.active a {
-  padding: 9px 18px;
+  padding: 6px 18px;
   display: block; }
-
 #menu li.active a {
   color: #fde6b1;
   text-shadow: 1px 0px 5px #fde6b1; }
 
-#menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 40px;
-  z-index: 70;
-  padding: 0;
-  margin: 0;
-  text-align: right; }
-
+@media (min-width: 768px) {
+  #menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    z-index: 70;
+    padding: 0;
+    margin: 0;
+    text-align: right; }
+    #menu i {
+      margin-right: 6px;
+      display: inline; }
+    #menu li {
+      display: block; } }
 .sunset {
   background: #6f749e;
   background: -moz-linear-gradient(top, #6f749e 0%, #9a8daf 31%, #d0a8b9 58%, #f8bbb1 80%, #fde6b1 100%);
@@ -266,21 +259,12 @@
   background: -ms-linear-gradient(top, #6f749e 0%, #9a8daf 31%, #d0a8b9 58%, #f8bbb1 80%, #fde6b1 100%);
   background: linear-gradient(to bottom, #6f749e 0%, #9a8daf 31%, #d0a8b9 58%, #f8bbb1 80%, #fde6b1 100%); }
 
-#announcement {
-  position: absolute;
-  width: 100%;
-  text-align: center; }
-  #announcement h1 {
-    font-size: 100px; }
-  #announcement h2 {
-    font-size: 60px; }
-
 #silhouette {
+  z-index: 70;
+  width: 50%;
   position: fixed;
   bottom: 0;
-  left: 40px;
-  width: 300px;
-  z-index: 70; }
+  left: 25%; }
 
 .grass {
   background-image: url("../images/grass.svg");
@@ -294,6 +278,13 @@
   left: 0;
   z-index: 70; }
 
+@media (min-width: 768px) {
+  #silhouette {
+    left: 40px;
+    width: 250px; } }
+@media (min-width: 1200px) {
+  #silhouette {
+    width: 300px; } }
 * {
   box-sizing: border-box; }
 
@@ -314,6 +305,9 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6em; }
+
+h2 {
+  font-size: 3em; }
 
 p {
   font-size: 2em;
@@ -377,7 +371,7 @@ p {
   margin: 50px 0; }
 
 .fullpage-wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto; }
 
 /*** ABOUT ***/
@@ -399,3 +393,12 @@ p {
 /*** HOTELS ***/
 .hotel {
   font-size: 14px; }
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #fde6b1; }
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #fde6b1 transparent transparent; }
+
+.fp-tableCell {
+  padding: 40px; }

@@ -41,6 +41,9 @@ h1, h2, h3 {
 h1{
 	font-size: 6em;
 }
+h2 {
+	font-size: 3em;
+}
 p{
 	font-size: 2em;
 
@@ -70,6 +73,8 @@ a:hover {
 }
 
 /*** VIDEO ***/
+
+// .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 iframe {
 	border: 20px solid $color--dark;
@@ -131,7 +136,7 @@ p {
 }
 
 .fullpage-wrapper {
-	width: 960px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -175,4 +180,14 @@ p {
 /*** HOTELS ***/
 .hotel {
 	font-size: 14px;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent $color--5;
+}
+.fp-controlArrow.fp-prev {
+	  border-color: transparent $color--5 transparent transparent;
+}
+.fp-tableCell {
+	padding: 40px;
 }

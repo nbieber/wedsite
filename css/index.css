@@ -315,6 +315,9 @@ h1 {
 h2 {
   font-size: 3em; }
 
+h3 {
+  text-align: center; }
+
 p {
   font-size: 2em;
   -webkit-font-smoothing: antialiased; }
@@ -335,11 +338,11 @@ a:hover {
   text-shadow: 1px 0px 5px #f8bbb1; }
 
 /*** VIDEO ***/
-iframe, #map {
-  border: 20px solid black;
+iframe {
+  border: 20px solid rgba(0, 0, 0, 0.8);
   border-radius: 12px; }
 
-#video, #map {
+#video {
   padding: 20px 0; }
 
 .blink {
@@ -403,12 +406,28 @@ p {
 /*** HOTELS ***/
 .hotel {
   font-size: 14px; }
+  .hotel img {
+    vertical-align: middle;
+    margin-right: 4px; }
+
+#map-wrapper {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px; }
 
 #map {
   height: 400px;
-  margin: 30px auto;
   width: 600px;
-  color: #6f749e; }
+  color: #6f749e;
+  display: inline-block;
+  vertical-align: top; }
+
+#map-key {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  padding-left: 20px; }
 
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #fde6b1; }

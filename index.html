@@ -36,7 +36,13 @@
 				sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
 				anchors: ['video', 'ceremony', 'hotels', 'gifts', 'rsvp'],
 				menu: '#menu',
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				onLeave: function() {
+					$(".grass").addClass('grass-infront');
+				},
+				afterLoad: function() {
+					$(".grass").removeClass('grass-infront');
+				}
 			});
 
 		});

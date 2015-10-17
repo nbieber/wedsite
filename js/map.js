@@ -37,18 +37,19 @@ function initMap() {
         icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|f8bbb1'
     })];
 
-    attachPopup(markers[0], "<div class='hotel'>Hall of Springs</div><br>Ceremony and Reception held here!");
+    attachPopup(markers[0], "<div class='hotel' >Hall of Springs</div><br>Ceremony and Reception held here!");
     attachPopup(markers[1], "<div class='hotel'>Gideon Putnam</div>518-584-3000<br>$199 - standard room<br>$299 - suite<br>$359 - Putnam Suite<br><br>Use promo code BIEBSTEI<br><a href='http://www.gideonputnam.com/'>http://www.gideonputnam.com/</a>");
     attachPopup(markers[2], "<div class='hotel'>Best Western Plus Park Inn</div>518-584-2350<br><br>$149.95/night<br><br>(No special promo code necessary)");
     attachPopup(markers[3], "<div class='hotel'>The Holiday Inn Express & Suites Clifton Park</div>518-579-3000<br><br>$124 - Sunday night<br>$154 - Saturday night<br><br>Say you're with the Bieber-Stein wedding");
 
     function attachPopup(marker, message) {
       var infowindow = new google.maps.InfoWindow({
-        content: message
-    });
+            content: message
+        });
 
-      marker.addListener('click', function() {
-        infowindow.open(marker.get('map'), marker);
-    });
-  }
+        marker.addListener('click', function() {
+            infowindow.open(marker.get('map'), marker);
+        });
+    }
 }
+

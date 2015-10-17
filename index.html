@@ -36,7 +36,13 @@
 				sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent', 'transparent'],
 				anchors: ['video', 'ceremony', 'hotels', 'gifts', 'rsvp'],
 				menu: '#menu',
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				onLeave: function() {
+					$(".grass").addClass('grass-infront');
+				},
+				afterLoad: function() {
+					$(".grass").removeClass('grass-infront');
+				}
 			});
 
 		});
@@ -97,7 +103,7 @@
 	</div>
 	<div class="section" id="section1">
 	    <h1>Ceremony</h1>
-	    <p>The Ceremony will begin at 12p.m.<br> on May 22, 2016 at the <a href="http://hallofsprings.com/" target="_blank">Hall of Springs</a></p>
+	    <p>The Ceremony will begin at 2p.m.<br> on May 22, 2016 at the <a href="http://hallofsprings.com/" target="_blank">Hall of Springs</a></p>
 		<p>Reception immediately to follow</p>
 	</div>
 	<div class="section" id="section2">
